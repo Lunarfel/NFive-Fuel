@@ -156,7 +156,6 @@ namespace Lunarfel.LunarfelFuel.Client
 				currentVehicleFuelLevelInitialized = false;
 			}
 
-			//await Delay(TimeSpan.FromSeconds(1));
 			await Task.FromResult(0);
 		}
 
@@ -174,11 +173,11 @@ namespace Lunarfel.LunarfelFuel.Client
             for (int i = 0; i < GasStations.positions.Length; i++)
             {
                 var blip = World.CreateBlip(GasStations.positions[i]);
-                blip.Sprite = BlipSprite.JerryCan;
-                blip.Color = BlipColor.White;
-                blip.Scale = 1f;
-                blip.IsShortRange = true;
-                blip.Name = "Gas Station";
+                blip.Sprite = (BlipSprite)config.BlipID;
+                blip.Color = (BlipColor)config.BlipColor;
+                blip.Scale = config.BlipSize;
+                blip.IsShortRange = config.BlipSR;
+                blip.Name = config.BlipName;
 
                 blips[i] = blip;
             }
