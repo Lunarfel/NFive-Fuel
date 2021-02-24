@@ -1,0 +1,17 @@
+name: Lunarfel/Lunarfel-Fuel
+version: 1.0.0
+description: NFive Plugin
+author: Lunarfel
+license: LGPL-3.0-or-later
+server:
+  main:
+    - Lunarfel.LunarfelFuel.Server
+  include:
+    - Lunarfel.LunarfelFuel.Shared
+client:
+  main:
+    - Lunarfel.LunarfelFuel.Client
+  include:
+    - Lunarfel.LunarfelFuel.Shared
+  files:
+    - Overlays/LunarfelFuelOverlay.html
