@@ -13,5 +13,3 @@ client:
     - Lunarfel.LunarfelFuel.Client
   include:
     - Lunarfel.LunarfelFuel.Shared
-  files:
-    - Overlays/LunarfelFuelOverlay.html

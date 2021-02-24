@@ -4,6 +4,9 @@ namespace Lunarfel.LunarfelFuel.Shared
 {
 	public class Configuration : ControllerConfiguration
 	{
-		public string Example { get; set; } = "Hello World";
+		// Are blips enabled?
+		public bool CreateBlips { get; set; } = true;
+		// Jerrycans / pickup fuel / enabled?
+		public bool CreatePickups { get; set; } = false;
 	}
 }
