@@ -7,3 +7,6 @@ NFive Plugin
 
 ## Installation
 Install the plugin into your server from the [NFive Hub](https://hub.nfive.io/Lunarfel/Lunarfel-Fuel): `nfpm install Lunarfel/Lunarfel-Fuel`
+
+## Copyright
+This is a rewrite/backport of FRFuel (https://github.com/thers/FRFuel) to a standalone NFive resource, feel free to use it but keep the appropriate copyright of the original plugin author.
